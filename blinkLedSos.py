@@ -1,0 +1,48 @@
+import RPi.GPIO as GPIO
+import time
+
+pinNum = 11
+
+def sos(pin):
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.7)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.7)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.7)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.HIGH)
+        time.sleep(0.1)
+        GPIO.output(pin,GPIO.LOW)
+        time.sleep(2)
+        return
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(pinNum, GPIO.OUT)
+for i in range(0,2):
+        sos(pinNum)
+GPIO.cleanup() 
