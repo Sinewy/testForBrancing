@@ -23,3 +23,8 @@ target.close()
 #print "hello from pyhton DZUREEEE... "
 
 # for branch 01 - new commit
+# for branch 01 - new commit
+# for branch 01 - new commit
+# for branch 01 - new commit
+# for branch 01 - new commit
+
